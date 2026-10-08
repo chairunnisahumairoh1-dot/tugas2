@@ -2,7 +2,8 @@ name: Build C++ EXE
 
 on:
   push:
-    branches: [ "main" ]
+    branches:
+      - main
   workflow_dispatch:
 
 jobs:
@@ -11,12 +12,11 @@ jobs:
 
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v6
+        uses: actions/checkout@v4
 
       - name: Compile C++
         shell: bash
-        run: |
-        g++ tugas_2.cpp -o tugas_2.exe -static
+        run: g++ tugas_2.cpp -o tugas_2.exe -static
 
       - name: Upload EXE
         uses: actions/upload-artifact@v4
