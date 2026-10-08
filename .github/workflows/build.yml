@@ -16,10 +16,10 @@ jobs:
 
       - name: Compile C++
         shell: bash
-        run: g++ tugas_2.cpp -o tugas_2.exe -static
+        run: g++ tugas_4.cpp -o tugas_4.exe -static
 
       - name: Upload EXE
         uses: actions/upload-artifact@v4
         with:
-          name: tugas_2-exe
-          path: tugas_2.exe
+          name: tugas_4-exe
+          path: tugas_4.exe
