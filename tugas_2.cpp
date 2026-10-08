@@ -1,25 +1,27 @@
 #include <iostream>
 using namespace std;
+
 int main() {
-    int nilai=0;
-    cout<<"masukkan nilai";
-    cin>>nilai;
-    if(nilai>95)
+    int nilai = 0;
+
+    cout << "Masukkan nilai: ";
+    cin >> nilai;
+
+    if (nilai >= 95)
     {
-        cout<<"NILAI// Online C++ compiler to run C++ program online
- A";
+        cout << "NILAI A";
     }
-    else if(nilai>85)
+    else if (nilai >= 85)
     {
-        cout<<"NILAI B";
+        cout << "NILAI B";
     }
-    else if(nilai>75)
+    else if (nilai >= 75)
     {
-        cout<<"NILAI C";
+        cout << "NILAI C";
     }
-    else if(nilai<75)
+    else
     {
-        cout<<"NILAI D";
+        cout << "NILAI D";
     }
 
     return 0;
