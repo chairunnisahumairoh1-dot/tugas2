@@ -23,6 +23,6 @@ int main() {
     {
         cout << "NILAI D";
     }
-
+    system("pause");
     return 0;
 }
